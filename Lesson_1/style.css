@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #e2dfdb;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+body{
+    background: #181a1b;
+}
+body > *{
+    margin: 50px auto;
+    max-width: fit-content;
+}
+
+
+
+.avatar img{
+    border-radius: 50%;
+}
+
+
+
+.badge{
+    background: #fafafa;
+    padding: 2px 10px;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+}
+.badge .badge-content{
+    font-size: 12px;
+    font-weight: bold;
+    color: #181a1b;
+}
+
+
+
+.button{
+    background: #fafafa;
+    border-radius: calc(0.5rem - 2px);
+    padding: 8px 16px;
+}
+.button .button-content{
+    color: #181a1b;
+    font-weight: bold;
+}
+
+
+
+.card{
+    border: 0.8px solid #373c3e;
+    border-radius: 0.5rem;
+    color: #e2dfdb;
+}
+.card > div:nth-child(2n + 1){
+    padding: 24px;
+}
+.card > div:nth-child(2n){
+    padding: 0 24px;
+}
+.card .card-title h1{
+    font-size: 24px;
+}
+.card .card-title p{
+    color: #717171;
+    margin-top: 6px;
+}
+.card .card-body .card-input:nth-child(2){
+    margin-top: 25px;
+}
+.card .card-body .card-input input[type="text"],
+.card .card-body .card-input select{
+    padding: 10px 16px;
+    background: transparent;
+    border: 0.8px solid #373c3e;
+    border-radius: 0.5rem;
+    margin-top: 6px;
+    width: 300px;
+}
+.card .card-body .card-input select{
+    min-width: 100%;
+    appearance: none;
+	background: url('https://api.iconify.design/akar-icons/chevron-down.svg') no-repeat center / contain;
+	background-size: 20px;
+	background-position: calc(100% - 10px);
+    filter: invert();
+    color: #000000;
+    border: 0.8px solid #c8c3c1;
+}
+.card .card-body .card-input select > *{
+    background-color: #181a1b;
+}
+.card .card-btn .btn{
+    border: 0.8px solid #373c3e;
+    border-radius: calc(0.5rem - 2px);
+    background: transparent;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.card .card-btn .btn.btn-deploy{
+    border: 0;
+    float: right;
+}
+
+
+
+
+.progression-bar{
+    position: relative;
+}
+.progression-bar .outer{
+    height: 150px;
+    width: 150px;
+    background: #90caf9;
+    border-radius: 100%;
+}
+.progression-bar .outer.spin{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    background: conic-gradient(
+        #181a1b 0 180deg,
+        #90caf9 360deg
+    );
+    animation: spin 0.727s linear infinite;
+}
+.progression-bar .inner{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 130px;
+    width: 130px;
+    background: #181a1b;
+    border-radius: 100%;
+}
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card UI Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-title">
+            <h1>Create project</h1>
+            <p>Deploy your new project in one-click</p>            
+        </div>
+        <div class="card-body">
+            <div class="card-input">
+                <h3 class="card-input-title">Name</h3>
+                <input type="text" id="" placeholder="Name of your project">
+            </div>
+            <div class="card-input">
+                <h3 class="card-input-title">Framework</h3>
+                <div class="card-input-select">
+                    <select name="Select"> 
+                        <option value="Select">----- Select -----</option>
+                        <option value="Next.js">Next.js</option>
+                        <option value="Vue.js">Vue.js</option>
+                        <option value="SvelteKit">SvelteKit</option>
+                        <option value="Astro">Astro</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card-btn">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-deploy">Deploy</button>            
+        </div>
+    </div>
+</body>
+</html>
