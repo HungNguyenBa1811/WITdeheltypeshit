@@ -122,8 +122,8 @@ body > *{
     position: absolute;
     top: 0;
     background: conic-gradient(
-        #181a1b 0 180deg,
-        #90caf9 360deg
+        #181a1b 90deg,
+        #90caf9 0 360deg
     );
     animation: spin 0.727s linear infinite;
 }
